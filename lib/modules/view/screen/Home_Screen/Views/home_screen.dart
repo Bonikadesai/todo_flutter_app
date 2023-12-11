@@ -2,10 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart'; // Import Cloud Firestore
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:todo_flutter_app/utils/todo_tile.dart';
 
-import '../../hepler/todo_helper.dart';
-import '../../utils/global.dart';
+import '../../../../utils/constant/global.dart';
+import '../../../../utils/hepler/cloud_firestore/todo_helper.dart';
+import '../../Todo_Screen/Views/todo_tile.dart';
 
 class Home_Screen extends StatefulWidget {
   const Home_Screen({Key? key}) : super(key: key);

@@ -1,10 +1,10 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:todo_flutter_app/view/screen/home_screen.dart';
-import 'package:todo_flutter_app/view/screen/splash_screen.dart';
 
 import 'firebase_options.dart';
+import 'modules/view/screen/Home_Screen/Views/home_screen.dart';
+import 'modules/view/screen/Splash_Screen/Views/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

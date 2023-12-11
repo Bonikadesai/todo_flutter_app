@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../utils/global.dart';
+import '../../../../utils/constant/global.dart';
 
 class Splash_Screen extends StatefulWidget {
   const Splash_Screen({super.key});
@@ -29,7 +29,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
               decoration: BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage(
-                      "assets/splash.png",
+                      "lib/assets/splash.png",
                     ),
                     fit: BoxFit.cover),
               ),

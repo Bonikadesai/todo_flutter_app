@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:todo_flutter_app/utils/global.dart';
+
+import '../../../../utils/constant/global.dart';
 
 class Todo_Tile extends StatefulWidget {
   final String taskName;
