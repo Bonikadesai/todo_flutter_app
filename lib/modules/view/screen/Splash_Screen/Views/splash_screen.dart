@@ -5,14 +5,9 @@ import 'package:get/get.dart';
 
 import '../../../../utils/constant/global.dart';
 
-class Splash_Screen extends StatefulWidget {
+class Splash_Screen extends StatelessWidget {
   const Splash_Screen({super.key});
 
-  @override
-  State<Splash_Screen> createState() => _Splash_ScreenState();
-}
-
-class _Splash_ScreenState extends State<Splash_Screen> {
   @override
   Widget build(BuildContext context) {
     Timer(const Duration(seconds: 5), () {

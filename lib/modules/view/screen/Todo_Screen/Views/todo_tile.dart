@@ -3,7 +3,7 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 
 import '../../../../utils/constant/global.dart';
 
-class Todo_Tile extends StatefulWidget {
+class Todo_Tile extends StatelessWidget {
   final String taskName;
   final bool taskCompleted;
   Function(bool?)? onChanged;
@@ -18,11 +18,6 @@ class Todo_Tile extends StatefulWidget {
   });
 
   @override
-  State<Todo_Tile> createState() => _Todo_TileState();
-}
-
-class _Todo_TileState extends State<Todo_Tile> {
-  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -31,7 +26,7 @@ class _Todo_TileState extends State<Todo_Tile> {
           motion: StretchMotion(),
           children: [
             SlidableAction(
-              onPressed: widget.deleteFunction,
+              onPressed: deleteFunction,
               icon: Icons.delete,
               backgroundColor: Color(0xff9395D3),
               borderRadius: BorderRadius.circular(20),
@@ -49,10 +44,9 @@ class _Todo_TileState extends State<Todo_Tile> {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                Checkbox(
-                    value: widget.taskCompleted, onChanged: widget.onChanged),
+                Checkbox(value: taskCompleted, onChanged: onChanged),
                 Text(
-                  widget.taskName,
+                  taskName,
                   style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(
